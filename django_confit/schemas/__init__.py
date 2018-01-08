@@ -21,7 +21,7 @@ def get_django_schema_class():
     except ImportError as e:
         raise ImportError(
             'Could not import "{schema_path}". '
-            'Django version {version:s} is not supported by django_confit. \n'
+            'Django version {version!s} is not supported by django_confit. \n'
             '{exception}'
             .format(
                 schema_path=schema_import_path,
